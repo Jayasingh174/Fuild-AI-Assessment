@@ -15,7 +15,7 @@ there is no database, authentication, or other infrastructure. The goal is a
 small, correct, well-tested service, not a fully productionized system.
 
 ## Project structure
-notes-api/
+# notes-api/
 ├── app/
 │ ├── init.py
 │ ├── main.py # FastAPI app, routes, HTTP status codes, error handling
