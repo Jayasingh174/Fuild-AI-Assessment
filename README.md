@@ -15,16 +15,18 @@ there is no database, authentication, or other infrastructure. The goal is a
 small, correct, well-tested service, not a fully productionized system.
 
 ## Project structure
-# notes-api/
+
+```text
+notes-api/
 ├── app/
-│ ├── init.py
-│ ├── main.py # FastAPI app, routes, HTTP status codes, error handling
-│ ├── models.py # Pydantic request/response models and validation
-│ ├── store.py # In-memory storage and ID generation
-│ └── exceptions.py # Custom exceptions (NoteNotFoundError)
+│   ├── __init__.py
+│   ├── main.py          # FastAPI app, routes, HTTP status codes, error handling
+│   ├── models.py        # Pydantic request/response models and validation
+│   ├── store.py         # In-memory storage and ID generation
+│   └── exceptions.py    # Custom exception (NoteNotFoundError)
 ├── tests/
-│ ├── init.py
-│ └── test_notes.py
+│   ├── __init__.py
+│   └── test_notes.py
 ├── requirements.txt
 └── README.md
 
